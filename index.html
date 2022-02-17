@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Drum wrapper -->
+    <div class="drums">
+        <!-- Drum Image -->
+        <img class="drum" src="https://github.com/jesswin/jesswin.github.io/blob/master/drums.png?raw=true"> </img>
+        <!-- Left Stick -->
+        <img class="stick" src="https://github.com/jesswin/jesswin.github.io/blob/master/drumstick-7703845-removebg-preview.png?raw=true"></img>
+        <!-- Right Stick -->
+        <img class="stick-right" src="https://github.com/jesswin/jesswin.github.io/blob/master/drumstick-7703845-removebg-preview%20(1).png?raw=true"></img>
+        <!-- Bottom Swizzle -->
+        <img class="swizzle" src="https://github.com/jesswin/jesswin.github.io/blob/master/swizzles1-removebg-preview.png?raw=true"></img>
+        
+        <!-- Keys -->
+        <div data-key="72" class="key snare" onclick="playSoundOnClick(72)">
+            <kbd>H</kbd>
+        </div>
+        <div style="margin:0 0 0 -60px;" data-key="66" class="key kick" onclick="playSoundOnClick(66)">
+            <kbd>B</kbd>
+        </div>
+        <div data-key="86" class="key kick2" onclick="playSoundOnClick(86)">
+            <kbd>V</kbd>
+        </div>
+        <div data-key="74" class="key high-tom" onclick="playSoundOnClick(74)">
+            <kbd>J</kbd>
+        </div>
+        <div style="margin:0 0 0 -60px;" data-key="71" class="key mid-tom" onclick="playSoundOnClick(71)">
+            <kbd>G</kbd>
+        </div>
+        <div data-key="70" class="key floor-tom" onclick="playSoundOnClick(70)">
+            <kbd>F</kbd>
+        </div>
+        <div data-key="69" class="key crash" onclick="playSoundOnClick(69)">
+            <kbd>E</kbd>
+        </div>
+        <div data-key="82" class="key ride" onclick="playSoundOnClick(82)">
+            <kbd>R</kbd>
+        </div>
+        <div data-key="73" class="key hihat-open" onclick="playSoundOnClick(73)">
+            <kbd>I</kbd>
+        </div>
+        <div data-key="75" class="key hihat-close" onclick="playSoundOnClick(75)">
+            <kbd>K</kbd>
+        </div>
+    </div>
+    
+    <!--Audio for keys  -->
+    <audio data-key="74" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/snare.wav"></audio>
+    <audio data-key="66" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="86" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="72" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-high.wav"></audio>
+    <audio data-key="71" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-mid.wav"></audio>
+      <audio data-key="70" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-low.wav"></audio>
+      <audio data-key="69" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"></audio>
+      <audio data-key="82" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
+      <audio data-key="73" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
+      <audio data-key="75" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"></audio>
+    </body>
+    <script src="./index.js"></script>
+    </html>
